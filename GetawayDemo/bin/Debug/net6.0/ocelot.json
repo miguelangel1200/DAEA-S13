@@ -1,0 +1,19 @@
+{
+    "Routes": [
+        {
+            "DownstreamPathTemplate": "Clientes",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost/api/",
+                    "Port": 7102
+                }
+            ],
+            "UpstreamPathTemplate": "/gateway/Clientes",
+            "UpstreamHttpMethod": [ "GET" ]
+        }
+    ],
+    "GlobalConfiguration": {
+        "BaseUrl" :  "https/localhost:5000"
+    }
+}
